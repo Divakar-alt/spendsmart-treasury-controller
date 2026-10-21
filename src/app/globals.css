@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #060a17;
+  --foreground: #f1f5f9;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b132b;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c2541;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2dd4bf;
+}
+
+/* Glowing fintech accents */
+.glow-teal {
+  box-shadow: 0 0 25px -5px rgba(45, 212, 191, 0.25);
+}
+
+.glow-border-teal {
+  border-color: rgba(45, 212, 191, 0.4);
+}
+
+.gradient-teal {
+  background: linear-gradient(135deg, #14b8a6 0%, #00f2fe 100%);
+}
+
+.gradient-navy {
+  background: linear-gradient(180deg, #0b132b 0%, #060a17 100%);
+}
